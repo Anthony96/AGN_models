@@ -21,6 +21,8 @@ The OXAF models are physically based AGN continuum emission models introduced by
 
 In these simulations, E<sub>peak</sub> varies from 20 to 100 eV, following Fig. 5 of Thomas et al. (2016). For p<sub>NT</sub>, we assume three possible values: 0.1, 0.25, and 0.4. Finally, $\Gamma$ is set to +2.0.
 
+A python code to convert and interpolate the AGN SED produced with the original oxaf code (https:// github.com/ADThomas-astro/oxaf) into a coarser grid ready to be injected as an input in Cloudy is included in the repository (*interpolate_convert_oxaf_models.py*). This new spectral shape is given to Cloudy through the command 'interpolate'. 
+
 
 # Line predictions available
 Each table contains the predictions of the line intensity (in units of *erg/s*, obtained with the command 'get_emis_vol' in pycloudy) of a specific emission line (relative to $H\beta$) specified in the filename, as a function of the following model parameters : <br />
