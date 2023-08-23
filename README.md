@@ -81,5 +81,8 @@ Currently, the flux predictions are available for the following emission lines, 
 
 The following figure, shown as an example, represents the Cloudy predictions using the AGN models from Thomas et al. (2016).
 
-![Alt text](./oxaf_models_BPT.png)
+
+![Alt text](oxaf_models_BPT.png)
+
+
 *BPT diagram, where the line ratio predictions for AGNs are obtained using the recent models of Thomas et al. (2016,2018). For the AGN models with the same ionization parameter (colored as indicated in the legend), the circles are the predictions obtained with E<sub>peak</sub> = 20 eV, while the square symbols are derived assuming E<sub>peak</sub> = 100 eV. The marker size varies as a function of gas density (from $10^2$ to $10^4$ $cm^{−3}$ from the smaller to the larger). The three points with the same marker, size, and color, are the predictions of three different values of p<sub>NT</sub>: 0.1, 0.25, and 0.4. The star-forming models are also shown as described in the star-forming models repository:* https://github.com/Anthony96/star-forming_models.git
