@@ -19,13 +19,13 @@ The OXAF models are physically based AGN continuum emission models introduced by
 - **$\Gamma$** : the power-law index of the non-thermal emission
 - **p<sub>NT</sub>** : the fraction of the total flux coming from the non-thermal component 
 
-In these simulations, E<sub>peak</sub> varies from 20 to 100 eV, following Fig. 5 of Thomas et al. (2016). For p<sub>NT</sub>, we assume three possible values: 0.1, 0.25, and 0.4. Finally, $\Gamma$ is set to +2.0.
+In our simulations, E<sub>peak</sub> varies from 20 to 100 eV, following Fig. 5 of Thomas et al. (2016). For p<sub>NT</sub>, we assume three possible values: 0.1, 0.25, and 0.4. Finally, $\Gamma$ is set to +2.0.
 
 A python code to convert and interpolate the AGN SED produced with the original oxaf code (https:// github.com/ADThomas-astro/oxaf) into a coarser grid ready to be injected as an input in Cloudy is included in the repository (*interpolate_convert_oxaf_models.py*). This new spectral shape is given to Cloudy through the command 'interpolate'. 
 
 
 # Line predictions available
-Each table contains the predictions of the line intensity (in units of *erg/s*, obtained with the command 'get_emis_vol' in pycloudy) of a specific emission line (relative to $H\beta$) specified in the filename, as a function of the following model parameters : <br />
+Each table contains the predictions of the line intensity (in units of *erg/s*, obtained with the command 'get_emis_vol' in pycloudy) of a specific emission line (scaled to $H\beta$ intensity $=100$) specified in the filename, as a function of the following model parameters : <br />
 
 ### for the standard AGN model (*joined_table_AGN_models.txt*) :
 --- --- 
@@ -55,10 +55,10 @@ Currently, the flux predictions are available for the following emission lines, 
 
 | column name | emission line |
 | --- | --- |
-| CII_1335 | $1335$ &angst; |
-| CIV_1551 | $1550.78$ &angst; |
-| HeII_1640 | $1640.43$ &angst; |
-| CIII_1909 | $1909$ &angst; |
+| CII_1335 | [CII] $1335$ &angst; |
+| CIV_1551 | CIV $1550.78$ &angst; |
+| HeII_1640 | HeII $1640.43$ &angst; |
+| CIII_1909 | CIII] $1909$ &angst; |
 | Hbeta | $H\beta$ |
 | OIII_5007 | [OIII] $5006.84$ &angst; |
 | Halpha | $H\alpha$ |
