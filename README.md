@@ -3,6 +3,9 @@ https://arxiv.org/abs/2306.08605
 
 We use for the calculations the package pyCloudy v.0.9.11: 
 https://github.com/Morisset/pyCloudy/tree/0.9.11. 
+
+$\textcolor{red}{**}$ **Update 10 February 2025 :** new models have been added, spanning a larger grid of electron densities as : $10^2$, $10^3$, $10^4$, $10^5$, and $10^6$ $cm^{-3}$. Predictions are also available for a few additional emission lines from the rest-frame UV to the far-infrared (see new tables: **new_predictions_AGN_models.txt** and **.csv**). The new predictions are made with the default AGN model only. $\textcolor{red}{*}$
+
 # Description of the models 
 ## The default AGN model
 The default ionizing source is created with the built-in ’AGN’ command in Cloudy, which produces a multiple power law continuum characterized by a ’blue bump’ temperature T<sub>bb</sub>, and spectral energy indices $\alpha$<sub>UV</sub>, $\alpha$<sub>ox</sub>, $\alpha$<sub>X</sub> in UV, optical to X-ray, and X-rays, respectively. T<sub>bb</sub>, $\alpha$<sub>UV</sub>, and $\alpha$<sub>X</sub> are set, respectively, to $10^6$ K, $-0.5$, and $-1.35$, as in Risaliti et al. (2000). $\alpha$<sub>ox</sub> is free to vary among the following values: $−2$, $−1.7$, $−1.4$, and $−1.2$. An example pyCloudy command appears as :
